@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+
+h3{
+  font-size: 6vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 span{
+color: #f00000;}
+
+
+
+
+
+
+
+
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+.tumblr span {
+	background-color: #34526f;
+}
+.instagram span {
+	background-color: #517fa4;
+}
+
+.instagram span {
+  background: #FC466B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-tumblr {
+	color: #34526f;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button .fa-instagram {
+	color: #fc4664;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to bottom, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to bottom, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.icon-button .fa-youtube {
+	color: #bb0000;
+}
+.icon-button .fa-pinterest {
+	color: #cb2027;
+}
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
   }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
 }
